@@ -1,0 +1,74 @@
+.carouselItem {
+    min-width: 1px;
+    margin: 1.5%;
+    flex: 1 0 18%;
+    box-sizing: border-box;
+
+    .gridProductCard {
+        width: 100%;
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10%;
+
+        .gridProductCardHeart {
+            position: absolute;
+            top: 10px;
+            z-index: 1;
+
+            .heart {
+                cursor: pointer;
+
+                .heartButton:before {
+                    background: url(https://s3.amazonaws.com/hrla28renttherunway/icons/like.svg) no-repeat;
+                    background-size: contain; 
+                    background-position: 95% 40%;
+                    width: 24px;
+                    height: 20px;
+                    content: " ";
+                    display: inline-block;
+                    margin-right: 1ex;
+                    vertical-align: middle;
+                }
+
+                .heartButton {
+                    order: 0;
+                    color: transparent;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 0;
+                    height: 50px;
+                    line-height: 50px;
+                    overflow: hidden;
+                    width: 50px;
+                    border: none;
+                    background-color: #fff;
+                    outline: none; 
+                }
+            }
+        }
+
+        .gridProductCardInner {
+            color: inherit;
+            text-decoration: none;
+
+            .gridProductCardImageWrapper {
+                position: relative;
+
+                .gridProductCardImage {
+                    width: 100%;
+                    margin: 0 auto;
+                    opacity: 1;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                .img2, .img3, .img4 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
