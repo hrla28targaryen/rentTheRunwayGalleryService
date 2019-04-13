@@ -7,6 +7,6 @@ router
 
 router
     .route('/:productID')
-    .get(controller.getProductReviews);
+    .get(controller.getProductSimilarGallery);
 
 module.exports = router;

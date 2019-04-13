@@ -52,6 +52,10 @@
                 transform: rotate(45deg);
                 right: 15px;
             }
+
+            .buttonBack:disabled, .buttonForward:disabled{ 
+                opacity: 0.4;
+            }
         }
 
         .carouselViewport {

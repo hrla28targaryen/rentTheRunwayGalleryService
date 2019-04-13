@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'EngraversGothic BT';
+    src: url('../../dist/Engravers_Gothic_Regular.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../../dist/Proxima_Nova_Reg.ttf');
+}
+
 .relatedCarouselWrapper {
     position: relative;
     margin-left: auto;
@@ -20,6 +30,7 @@
         line-height: 26px;
         letter-spacing: 0;
         text-transform: none;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .carouselSubtitle {
@@ -29,5 +40,17 @@
         line-height: 15px;
         margin: -40px auto 40px;
         padding-top: 4px;
+
+        a {
+            font-family: EngraversGothic BT, serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #333333;
+            line-height: 100%;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #333333;
+            text-decoration: none;
+        }
     }
 }

@@ -25,4 +25,13 @@ function listObjects(folder) {
     ).promise();
 }
 
-module.exports = listObjects;
+function listObjectsDress() {
+    return s3.listObjects(
+        {Bucket: 'hrla28renttherunway', Prefix: `productCarousel/Dress/` }
+    ).promise();
+}
+
+module.exports = {
+    listObjects,
+    listObjectsDress
+};

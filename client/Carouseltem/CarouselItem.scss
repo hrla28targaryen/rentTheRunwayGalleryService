@@ -1,7 +1,7 @@
 .carouselItem {
     min-width: 1px;
-    margin: 1.5%;
     flex: 1 0 18%;
+    margin: 0 1%;
     box-sizing: border-box;
 
     .gridProductCard {
@@ -12,7 +12,8 @@
         margin-bottom: 10%;
 
         .gridProductCardHeart {
-            position: absolute;
+            position: relative;
+            left: -10px;
             top: 10px;
             z-index: 1;
 
@@ -20,7 +21,7 @@
                 cursor: pointer;
 
                 .heartButton:before {
-                    background: url(https://s3.amazonaws.com/hrla28renttherunway/icons/like.svg) no-repeat;
+                    background: url(https://s3.amazonaws.com/hrla28renttherunway/icons/like.png) no-repeat;
                     background-size: contain; 
                     background-position: 95% 40%;
                     width: 24px;
@@ -32,6 +33,7 @@
                 }
 
                 .heartButton {
+                    float: right;
                     order: 0;
                     color: transparent;
                     cursor: pointer;
@@ -59,14 +61,54 @@
                     width: 100%;
                     margin: 0 auto;
                     opacity: 1;
+                    transition: opacity 0.2s ease-in-out;
 
                     img {
                         max-width: 100%;
                     }
                 }
 
-                .img2, .img3, .img4 {
-                    display: none;
+                .img:not(:first-child) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                }
+            }
+
+            .gridProductCardInfo {
+                border-top: 1px solid #c7c7c7;;
+
+                h2 {
+                    font-family: EngraversGothic BT, serif;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: #333333;
+
+                    .gridProductCardDisplayName {
+                        display: block;
+                        font-family: 'Proxima Nova Regular', serif;
+                        letter-spacing: 0px;
+                        font-size: 12px;
+                        text-transform: none; 
+                    }
+                }
+
+                .productCardPriceRegular, .productCardPriceRetailQuiet {
+                    display: inline-block;
+                    font-family: 'Proxima Nova Regular', serif;
+                    font-size: 13px;
+                }
+
+                .productCardPriceRegular {
+                    padding-right: 7px; 
+                    font-weight: 900;
+                }
+
+                .productCardPriceRetailQuiet {
+                    padding-left: 7px; 
+                    color: #c7c7c7;
                 }
             }
         }
