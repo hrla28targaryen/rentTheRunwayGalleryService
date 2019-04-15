@@ -69,7 +69,7 @@ class CarouselItem extends React.Component{
                             {
                                 this.props.product.images.map( (imageURL, index) => {
                                 return (
-                                  <div className={cx(style.gridProductCardImage, style.img)}>
+                                  <div className={cx(style.gridProductCardImage, style.img)} key={index}>
                                     <img src={imageURL} />
                                   </div>)
                               })

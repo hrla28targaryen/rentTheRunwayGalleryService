@@ -3,7 +3,7 @@ var Promise = require("bluebird");
 const Product = require('./index.js');
 const s3 = require('./s3.js');
 
-const s3url = 'https://s3.amazonaws.com/hrla28renttherunway/';
+const s3url = 'https://s3.amazonaws.com/renttherunwayhrla28/';
 
 const designerPool = [
     'Alexander McQueen', 'Betsey Johnson', 'Emilio Pucci', 'Miuccia Prada', 'Riccardo Tisci', 'Le Corbusier', 'Coco Chanel'
